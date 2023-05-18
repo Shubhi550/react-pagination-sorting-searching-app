@@ -1,0 +1,62 @@
+/* Styles for desktop screens */
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navbar li {
+  margin-right: 1rem;
+}
+
+.navbar li:last-child {
+  margin-right: 0;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Styles for tablet screens */
+@media only screen and (max-width: 768px) {
+  .navbar li {
+    margin-right: 0.5rem;
+  }
+  
+  .navbar li:last-child {
+    margin-right: 0;
+  }
+  
+  .navbar li a {
+    padding: 10px;
+  }
+}
+
+/* Styles for mobile screens */
+@media only screen and (max-width: 480px) {
+  .navbar li {
+    margin-right: 0.25rem;
+  }
+  
+  .navbar li:last-child {
+    margin-right: 0;
+  }
+  
+  .navbar li a {
+    padding: 8px;
+  }
+}
